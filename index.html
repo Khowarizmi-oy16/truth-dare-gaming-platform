@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#101016" />
+  <meta name="description" content="Truth/Dare — a playful party game for friends, near and far." />
+  <title>Truth/Dare — Play boldly</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="app-shell">
+    <header class="topbar">
+      <a class="brand" href="#home" aria-label="Truth Dare home"><span class="brand-mark">T<span>/</span>D</span><span class="brand-name">TRUTH<span>/</span>DARE</span></a>
+      <nav class="top-nav" aria-label="Main navigation"><button class="nav-link active" data-view="home">Play</button><button class="nav-link" data-view="questions">Question bank</button><button class="nav-link" data-action="howto">How to play</button></nav>
+      <div class="top-actions"><button class="icon-button speaker-toggle" title="Toggle announcer" aria-label="Toggle announcer">◖))</button><button class="profile-button" id="profileButton"><span class="avatar-mini">G</span><span id="profileName">Guest player</span><span class="chevron">⌄</span></button></div>
+    </header>
+    <main id="mainContent"></main>
+    <footer class="footer"><span>GOOD QUESTIONS. GREAT STORIES.</span><span>Made for the moments between the moments <b>✳</b></span></footer>
+  </div>
+  <div id="modalRoot"></div>
+  <input id="importFile" type="file" accept=".json,.csv,application/json,text/csv" hidden />
+  <script src="app.js"></script>
+</body>
+</html>
